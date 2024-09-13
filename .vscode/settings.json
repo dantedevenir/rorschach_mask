@@ -1,0 +1,56 @@
+{
+    "mypy.dmypyExecutable": ".venv/bin/dmypy",
+    "python.analysis.extraPaths": ["./rocky/components"],
+    "remote.autoForwardPortsFallback": 0,
+    "python.analysis.typeCheckingMode": "basic",
+    "workbench.iconTheme": "vscode-icons",
+    "git.enableSmartCommit": true,
+    "editor.smoothScrolling": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "explorer.confirmDragAndDrop": false,
+    "git.rebaseWhenSync": true,
+    "jupyter.askForKernelRestart": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "terminal.integrated.fontFamily": "Fira Code, monospace",
+    "jupyter.enableScrollingForCellOutputs": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Ubuntu (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": ["-d", "Ubuntu"]
+        }
+    },
+    "window.commandCenter": true,
+    "terminal.integrated.shellIntegration.enabled": true,
+    "git.mergeEditor": true,
+    "explorer.openEditors.minVisible": 10,
+    "editor.accessibilitySupport": "off",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "pylint.args": ["--indent-string='    ", "--rcfile=${env:HOME}.pylintrc"],
+    "pylint.enabled": false
+}
