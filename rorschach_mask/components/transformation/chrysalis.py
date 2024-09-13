@@ -17,7 +17,6 @@ class Chrysalis:
         ENV_PATH = getenv('ENV_PATH')
         with open(f"{ENV_PATH}/rocky.toml", "r") as file:
             config_file = toml.load(file)
-            print("Registry:",self.registry)
             try:
                 if (
                     self.registry != "vtigercrm"

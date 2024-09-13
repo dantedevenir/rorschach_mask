@@ -571,13 +571,13 @@ files = [
 
 [[package]]
 name = "nite-howl"
-version = "0.1.4"
+version = "0.1.10"
 description = ""
 optional = false
 python-versions = ">=3.12,<4.0"
 files = [
-    {file = "nite_howl-0.1.4-py3-none-any.whl", hash = "sha256:7a055af1035e83089c40caa1ec1384643361e4563d5541085e32feaab54275b1"},
-    {file = "nite_howl-0.1.4.tar.gz", hash = "sha256:9838258478669fd2a3f5539ffc57ee9db0971dbb561841bacedce70fab01f402"},
+    {file = "nite_howl-0.1.10-py3-none-any.whl", hash = "sha256:ca4b1c2a6b50625516b4d694a50b5d559433c7287e4e618a32772e34158be68e"},
+    {file = "nite_howl-0.1.10.tar.gz", hash = "sha256:2a797d6cc67c0ce636f335cab47711f805c3462fd766ecfc4a6f971cfe33917e"},
 ]
 
 [package.dependencies]
@@ -1375,13 +1375,13 @@ test = ["argcomplete (>=3.0.3)", "mypy (>=1.7.0)", "pre-commit", "pytest (>=7.0,
 
 [[package]]
 name = "types-pytz"
-version = "2024.1.0.20240417"
+version = "2024.2.0.20240913"
 description = "Typing stubs for pytz"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "types-pytz-2024.1.0.20240417.tar.gz", hash = "sha256:6810c8a1f68f21fdf0f4f374a432487c77645a0ac0b31de4bf4690cf21ad3981"},
-    {file = "types_pytz-2024.1.0.20240417-py3-none-any.whl", hash = "sha256:8335d443310e2db7b74e007414e74c4f53b67452c0cb0d228ca359ccfba59659"},
+    {file = "types-pytz-2024.2.0.20240913.tar.gz", hash = "sha256:4433b5df4a6fc587bbed41716d86a5ba5d832b4378e506f40d34bc9c81df2c24"},
+    {file = "types_pytz-2024.2.0.20240913-py3-none-any.whl", hash = "sha256:a1eebf57ebc6e127a99d2fa2ba0a88d2b173784ef9b3defcc2004ab6855a44df"},
 ]
 
 [[package]]
@@ -1482,4 +1482,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "ba3f4b5ad45297a0019d4d0e1913598e30ff0aa9ab5dc06840d687f398217f30"
+content-hash = "755ccbb3f8d6dc2d0f2bd4fa521604290be84ed8833aa6ee6f581de74dc78b53"

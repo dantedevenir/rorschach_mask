@@ -1,7 +1,7 @@
 --extra-index-url https://pkgs.dev.azure.com/dantedevenir/rorschach/_packaging/nite-howl/pypi/simple
 
 confluent-kafka==2.5.3 ; python_version >= "3.12" and python_version < "4.0"
-nite-howl==0.1.8 ; python_version >= "3.12" and python_version < "4.0"
+nite-howl==0.1.10 ; python_version >= "3.12" and python_version < "4.0"
 numpy==2.1.1 ; python_version >= "3.12" and python_version < "4.0"
 pandas==2.2.2 ; python_version >= "3.12" and python_version < "4.0"
 py4j==0.10.9.7 ; python_version >= "3.12" and python_version < "4.0"

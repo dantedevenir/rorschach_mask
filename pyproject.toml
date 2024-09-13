@@ -14,7 +14,7 @@ packages = [
 python = "^3.12"
 pandas = "^2.2.2"
 toml = "^0.10.2"
-nite_howl = "0.1.5"
+nite_howl = "0.1.10"
 
 [[tool.poetry.source]]
 name = "nite-howl"
