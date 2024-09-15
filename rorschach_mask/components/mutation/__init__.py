@@ -1,3 +1,3 @@
-from .mutant import Mutant
+from .receiver import Receiver
 
-__all__ = ["Mutant"]
+__all__ = ["Receiver"]

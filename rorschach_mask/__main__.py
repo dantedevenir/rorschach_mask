@@ -1,6 +1,6 @@
-from components.mutation import Mutant
+from components.mutation import Receiver
 
-manhattan = Mutant()
+manhattan = Receiver()
 
 
 manhattan.catch()
