@@ -8,22 +8,8 @@
             "name": "Rocky Debugger: Module",
             "type": "debugpy",
             "request": "launch",
-            "module": "rorschach_mask"
-        },
-        {
-            "name": "Python C++ Debugger",
-            "type": "pythoncpp",
-            "request": "launch",
-            "pythonLaunchName": "Python: Current File",
-            "cppConfig": "default (gdb) Attach"
-        },
-        {
-            "name": "Python: Current File",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal",
-            "args": ["MP", "8888"]
+            "module": "rorschach_mask",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

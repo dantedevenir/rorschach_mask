@@ -7,22 +7,17 @@ readme = "README.md"
 packages = [
         {include = "components", from = "rorschach_mask"},
         {include = "mapping", from = "rorschach_mask"},
-        {include = "utils", from = "rorschach_mask"},
 ]
 
 [tool.poetry.dependencies]
 python = "^3.12"
 pandas = "^2.2.2"
-toml = "^0.10.2"
-nite_howl = "0.1.14"
+nite_howl = "0.1.29"
 
 [[tool.poetry.source]]
 name = "nite-howl"
 url = "https://pkgs.dev.azure.com/dantedevenir/rorschach/_packaging/nite-howl/pypi/simple"
 priority = "supplemental"
-
-[tool.poetry.scripts]
-rorschach-mask = "mutation:manhattan"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.3"

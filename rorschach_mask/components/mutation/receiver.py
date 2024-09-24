@@ -2,7 +2,7 @@ from os import getenv
 from ..transformation.metamorphosis import Metamorphosis
 from nite_howl import NiteHowl, minute
 import time
-#export ROOT_PATH=/samba-data;export ENV_PATH=/samba-data/.env;export BROKER=localhost:9092;export TOPIC=molina;export GROUP=tmp
+import pandas as pd
 
 class Receiver:
     
@@ -10,16 +10,19 @@ class Receiver:
         broker = getenv('BROKER')
         topic = getenv('TOPIC')
         group = getenv('GROUP')
-        self.howler = NiteHowl(broker, group, topic, "mask")
+        self.howler = NiteHowl(broker, group, str(topic).split(","), "mask")
 
     def catch(self):
         radar_generator = self.howler.radar()
         while True:
             try:
-                minute.register("info", f"Searching topics...")
-                table, topic, key = next(radar_generator)
-                df_transform = Metamorphosis.from_pandas(table.to_pandas(), topic)
-                self.howler.send(topic, df=df_transform.breed, key="delve")
+                table, topic, key, headers, type = next(radar_generator)
+                if topic == "mask":
+                    buttefly = Metamorphosis.from_pandas(table, key)
+                    minute.register("info", "So beauty! I catch a butterfly, now i send the breed...")
+                    self.howler.send("delve", msg=buttefly.breed, key=key, headers=headers)
+                else:
+                    minute.register("info", f"That larva '{key}' won't need me.")
             except StopIteration:
                 radar_generator = self.howler.radar()
             time.sleep(0.1)

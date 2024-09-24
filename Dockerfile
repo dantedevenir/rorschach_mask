@@ -1,7 +1,7 @@
 FROM python:3.12.4-slim-bookworm
 
 ARG DEBIAN_FRONTEND="noninteractive"
-ARG ROOT_PATH
+ARG GROUP
 ARG BROKER
 ARG TOPIC
 
